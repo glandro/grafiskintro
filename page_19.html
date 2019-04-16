@@ -67,7 +67,6 @@ function initGEV(){
 
 var trivPageScope = {};
 var pgID = 'page11554';
-trivDebug = 31;
 trivProtected = true;
 trivWeb20Popups = true;
 var trivPlayer = null;
@@ -170,12 +169,10 @@ trivSetupPage();
   Offset_qu11604()
 }
 
-var arrOfVars = new Array()
 var arVariables = [];
 
 VarTrivSelCap = new Variable( 'VarTrivSelCap', 'none', 0, 0, null, null, 'grafisk_design_intro', true )
 VarQuestion_0001 = new Variable( 'VarQuestion_0001', '', 0, 0, null, null, 'grafisk_design_intro', false )
-arrOfVars.push('VarQuestion_0001');
 
 onload = responsiveInit
 detect();
@@ -197,7 +194,6 @@ function init() {
   if( is.min ){
     trivPageTracking.InitPageTracking();
     PreloadResources(new Array(button17289,button17283,shape20755,shape19799,text19797,text19796,qu11604,qu11604,text11606,text11607,radio11608,radio11608,radio11608,text11609,radio11610,radio11610,radio11610,text11611,radio11612,radio11612,radio11612,text11613,radio11614,radio11614,radio11614,image13471))
-    trivLogMsg( '---- page_19.html ----' )
     pageLayer.show(true);
     button17289.init()
     button17283.init()
@@ -416,20 +412,20 @@ function doImmFeedback( objId ) {
   if(!qu11604.hasBeenProcessed) {
     if( ans_VarQuestion_0001 != '\u0045\u006E\u0020\u0073\u0074\u0069\u006C\u006C\u0065\u0020\u0061\u006D\u0062\u0061\u0073\u0073\u0061\u0064\u00F8\u0072' && ans_VarQuestion_0001 != '~~~null~~~' ) 
     { //2 
-trivActFBCnt++; action11604_13(onAfterFBAction);return 0;  } //2 
+trivActFBCnt++; action11604_17(onAfterFBAction);return 0;  } //2 
 
     else if( ans_VarQuestion_0001 == '\u0045\u006E\u0020\u0073\u0074\u0069\u006C\u006C\u0065\u0020\u0061\u006D\u0062\u0061\u0073\u0073\u0061\u0064\u00F8\u0072' ) 
     { //1 
-        trivActFBCnt++; action11604_14(onAfterFBAction);  return 0;
+        trivActFBCnt++; action11604_18(onAfterFBAction);  return 0;
   } //1
 
     else if( ans_VarQuestion_0001 != '\u0045\u006E\u0020\u0073\u0074\u0069\u006C\u006C\u0065\u0020\u0061\u006D\u0062\u0061\u0073\u0073\u0061\u0064\u00F8\u0072' && ans_VarQuestion_0001 != '~~~null~~~' ) 
     { //2 
-trivActFBCnt++; action11604_15(onAfterFBAction);return 0;  } //2 
+trivActFBCnt++; action11604_19(onAfterFBAction);return 0;  } //2 
 
     else if( ans_VarQuestion_0001 != '\u0045\u006E\u0020\u0073\u0074\u0069\u006C\u006C\u0065\u0020\u0061\u006D\u0062\u0061\u0073\u0073\u0061\u0064\u00F8\u0072' && ans_VarQuestion_0001 != '~~~null~~~' ) 
     { //2 
-trivActFBCnt++; action11604_16(onAfterFBAction);return 0;  } //2 
+trivActFBCnt++; action11604_20(onAfterFBAction);return 0;  } //2 
 
     }
   }
@@ -441,14 +437,12 @@ function OnDeviceRotate() {
 }
 
 function action11555(fn){
-    trivLogMsg( 'Action [OnShowNone on Page 19] fired!', 4 )
     
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();
 }
 
 function action17290(fn){
-    trivLogMsg( 'Action [OnMClkGoTo on av_fast_rewind] fired!', 4 )
     trivExitPage('page_18.html',false); 
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();
@@ -463,7 +457,6 @@ function button17289onUp() {
 }
 
 function action17284(fn){
-    trivLogMsg( 'Action [OnMClkGoTo on av_fast_forward] fired!', 4 )
     trivExitPage('page_20.html',true); 
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();
@@ -486,24 +479,20 @@ function Update_qu11604(value) {
    qu11604Object.hasBeenProcessed=false;
 }
 
-function action11604_13(fn){
-    trivLogMsg( 'Action [Question 1] fired!', 4 )
-    if(!document.getElementById("DLG_Div_11604"))trivAlert( 'action11604_13', 'Grafisk design_intro', 'Dessverre...', fn );
+function action11604_17(fn){
+    if(!document.getElementById("DLG_Div_11604"))trivAlert( 'action11604_17', 'Grafisk design_intro', 'Dessverre...', fn );
 }
 
-function action11604_14(fn){
-    trivLogMsg( 'Action [Question 1] fired!', 4 )
-    if(!document.getElementById("DLG_Div_11604"))trivAlert( 'action11604_14', 'Grafisk design_intro', 'Riktig!!', fn );
+function action11604_18(fn){
+    if(!document.getElementById("DLG_Div_11604"))trivAlert( 'action11604_18', 'Grafisk design_intro', 'Riktig!!', fn );
 }
 
-function action11604_15(fn){
-    trivLogMsg( 'Action [Question 1] fired!', 4 )
-    if(!document.getElementById("DLG_Div_11604"))trivAlert( 'action11604_15', 'Grafisk design_intro', 'Dessverre...', fn );
+function action11604_19(fn){
+    if(!document.getElementById("DLG_Div_11604"))trivAlert( 'action11604_19', 'Grafisk design_intro', 'Dessverre...', fn );
 }
 
-function action11604_16(fn){
-    trivLogMsg( 'Action [Question 1] fired!', 4 )
-    if(!document.getElementById("DLG_Div_11604"))trivAlert( 'action11604_16', 'Grafisk design_intro', 'Dessverre...', fn );
+function action11604_20(fn){
+    if(!document.getElementById("DLG_Div_11604"))trivAlert( 'action11604_20', 'Grafisk design_intro', 'Dessverre...', fn );
 }
 
 if( is.min ){

@@ -69,7 +69,6 @@ function initGEV(){
 
 var trivPageScope = {};
 var pgID = 'page2';
-trivDebug = 31;
 trivProtected = true;
 trivWeb20Popups = true;
 var trivPlayer = null;
@@ -171,7 +170,6 @@ trivSetupPage();
   }
 }
 
-var arrOfVars = new Array()
 var arVariables = [];
 
 VarTrivSelCap = new Variable( 'VarTrivSelCap', 'none', 0, 0, null, null, 'grafisk_design_intro', true )
@@ -200,7 +198,6 @@ function init11() {
   if( is.min ){
     trivPageTracking.InitPageTracking();
     PreloadResources(new Array(button691,shape3702,shape18475,image1601,image12782,text5995))
-    trivLogMsg( '---- page_1.html ----' )
     pageLayer.show(true);
     button691.init()
     shape3702.init()
@@ -364,7 +361,6 @@ function OnDeviceRotate() {
 }
 
 function action692(fn){
-    trivLogMsg( 'Action [OnMClkGoTo on av_fast_forward] fired!', 4 )
     trivExitPage('page_2.html',true); 
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();

@@ -67,7 +67,6 @@ function initGEV(){
 
 var trivPageScope = {};
 var pgID = 'page2941';
-trivDebug = 31;
 trivProtected = true;
 trivWeb20Popups = true;
 var trivPlayer = null;
@@ -169,7 +168,6 @@ trivSetupPage();
   }
 }
 
-var arrOfVars = new Array()
 var arVariables = [];
 
 VarTrivSelCap = new Variable( 'VarTrivSelCap', 'none', 0, 0, null, null, 'grafisk_design_intro', true )
@@ -194,7 +192,6 @@ function init() {
   if( is.min ){
     trivPageTracking.InitPageTracking();
     PreloadResources(new Array(button15627,button15621,shape20309,shape19058,image7415,text3066,text2951,text7437,image7544,image12913))
-    trivLogMsg( '---- page_5.html ----' )
     pageLayer.show(true);
     button15627.init()
     button15621.init()
@@ -367,14 +364,12 @@ function OnDeviceRotate() {
 }
 
 function action3676(fn){
-    trivLogMsg( 'Action [OnShowNone on Page 5] fired!', 4 )
     
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();
 }
 
 function action15628(fn){
-    trivLogMsg( 'Action [OnMClkGoTo on av_fast_rewind] fired!', 4 )
     trivExitPage('page_4.html',false); 
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();
@@ -389,7 +384,6 @@ function button15627onUp() {
 }
 
 function action15622(fn){
-    trivLogMsg( 'Action [OnMClkGoTo on av_fast_forward] fired!', 4 )
     trivExitPage('page_6.html',true); 
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();

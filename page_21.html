@@ -67,7 +67,6 @@ function initGEV(){
 
 var trivPageScope = {};
 var pgID = 'page11783';
-trivDebug = 31;
 trivProtected = true;
 trivWeb20Popups = true;
 var trivPlayer = null;
@@ -170,12 +169,10 @@ trivSetupPage();
   Offset_qu11786()
 }
 
-var arrOfVars = new Array()
 var arVariables = [];
 
 VarTrivSelCap = new Variable( 'VarTrivSelCap', 'none', 0, 0, null, null, 'grafisk_design_intro', true )
 VarQuestion_0003 = new Variable( 'VarQuestion_0003', '', 0, 0, null, null, 'grafisk_design_intro', false )
-arrOfVars.push('VarQuestion_0003');
 
 onload = responsiveInit
 detect();
@@ -197,7 +194,6 @@ function init() {
   if( is.min ){
     trivPageTracking.InitPageTracking();
     PreloadResources(new Array(button17535,button17529,shape20825,shape19861,text19859,text19858,qu11786,qu11786,text11787,text11788,radio11789,radio11789,radio11789,text11790,radio11791,radio11791,radio11791,text11792,radio11793,radio11793,radio11793,text11794,radio11795,radio11795,radio11795,image13499))
-    trivLogMsg( '---- page_21.html ----' )
     pageLayer.show(true);
     button17535.init()
     button17529.init()
@@ -416,20 +412,20 @@ function doImmFeedback( objId ) {
   if(!qu11786.hasBeenProcessed) {
     if( ans_VarQuestion_0003 == '\u0035\u0033\u0020\u00E5\u0072' ) 
     { //1 
-        trivActFBCnt++; action11786_13(onAfterFBAction);  return 0;
+        trivActFBCnt++; action11786_17(onAfterFBAction);  return 0;
   } //1
 
     else if( ans_VarQuestion_0003 != '\u0035\u0033\u0020\u00E5\u0072' && ans_VarQuestion_0003 != '~~~null~~~' ) 
     { //2 
-trivActFBCnt++; action11786_14(onAfterFBAction);return 0;  } //2 
+trivActFBCnt++; action11786_18(onAfterFBAction);return 0;  } //2 
 
     else if( ans_VarQuestion_0003 != '\u0035\u0033\u0020\u00E5\u0072' && ans_VarQuestion_0003 != '~~~null~~~' ) 
     { //2 
-trivActFBCnt++; action11786_15(onAfterFBAction);return 0;  } //2 
+trivActFBCnt++; action11786_19(onAfterFBAction);return 0;  } //2 
 
     else if( ans_VarQuestion_0003 != '\u0035\u0033\u0020\u00E5\u0072' && ans_VarQuestion_0003 != '~~~null~~~' ) 
     { //2 
-trivActFBCnt++; action11786_16(onAfterFBAction);return 0;  } //2 
+trivActFBCnt++; action11786_20(onAfterFBAction);return 0;  } //2 
 
     }
   }
@@ -441,14 +437,12 @@ function OnDeviceRotate() {
 }
 
 function action11784(fn){
-    trivLogMsg( 'Action [OnShowNone on Page 21] fired!', 4 )
     
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();
 }
 
 function action17536(fn){
-    trivLogMsg( 'Action [OnMClkGoTo on av_fast_rewind] fired!', 4 )
     trivExitPage('page_20.html',false); 
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();
@@ -463,7 +457,6 @@ function button17535onUp() {
 }
 
 function action17530(fn){
-    trivLogMsg( 'Action [OnMClkGoTo on av_fast_forward] fired!', 4 )
     trivExitPage('page_22.html',true); 
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();
@@ -486,24 +479,20 @@ function Update_qu11786(value) {
    qu11786Object.hasBeenProcessed=false;
 }
 
-function action11786_13(fn){
-    trivLogMsg( 'Action [Question 3] fired!', 4 )
-    if(!document.getElementById("DLG_Div_11786"))trivAlert( 'action11786_13', 'Grafisk design_intro', 'Riktig!!', fn );
+function action11786_17(fn){
+    if(!document.getElementById("DLG_Div_11786"))trivAlert( 'action11786_17', 'Grafisk design_intro', 'Riktig!!', fn );
 }
 
-function action11786_14(fn){
-    trivLogMsg( 'Action [Question 3] fired!', 4 )
-    if(!document.getElementById("DLG_Div_11786"))trivAlert( 'action11786_14', 'Grafisk design_intro', 'Dessverre...', fn );
+function action11786_18(fn){
+    if(!document.getElementById("DLG_Div_11786"))trivAlert( 'action11786_18', 'Grafisk design_intro', 'Dessverre...', fn );
 }
 
-function action11786_15(fn){
-    trivLogMsg( 'Action [Question 3] fired!', 4 )
-    if(!document.getElementById("DLG_Div_11786"))trivAlert( 'action11786_15', 'Grafisk design_intro', 'Dessverre...', fn );
+function action11786_19(fn){
+    if(!document.getElementById("DLG_Div_11786"))trivAlert( 'action11786_19', 'Grafisk design_intro', 'Dessverre...', fn );
 }
 
-function action11786_16(fn){
-    trivLogMsg( 'Action [Question 3] fired!', 4 )
-    if(!document.getElementById("DLG_Div_11786"))trivAlert( 'action11786_16', 'Grafisk design_intro', 'Dessverre...', fn );
+function action11786_20(fn){
+    if(!document.getElementById("DLG_Div_11786"))trivAlert( 'action11786_20', 'Grafisk design_intro', 'Dessverre...', fn );
 }
 
 if( is.min ){
